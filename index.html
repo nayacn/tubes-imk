@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARATE TAEKWONDO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/7a6c6b42a6.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black">
+
+   <!--Beranda Start-->
+    <!--Navbar-->
+    <nav class="bg-white">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+
+                <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex flex-shrink-0 items-center">
+                <img class="h-16 w-auto" src="images/logos.png" alt="INSHOKAI">
+              </div>
+            </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#" class="text-black px-3 py-2 text-sm font-medium" aria-current="page">Beranda</a>
+                  <div class="relative inline-block text-left">
+                    <div>
+                        <ul class="hidden lg:flex items-center space-x-6"></ul>
+                      <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                        Tentang
+                        <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                        </svg>
+                      </button>
+                    </div>
+                    
+                    <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                      <div class="py-1" role="none">
+                        <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Sekolah Taekwondo</a>
+                        <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">PENCAB</a>
+                        <form method="POST" action="#" role="none"> 
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <a href="#" class="text-black-300 px-3 py-2 text-sm font-medium">Program</a>
+                  <a href="#" class="text-black-300 px-3 py-2 text-sm font-medium">Berita</a>
+                  <a href="#" class="text-black-300 px-3 py-2 text-sm font-medium">Produk</a>
+                  <a href="#" class="text-black-300 px-3 py-2 text-sm font-medium">Kontak</a>
+                  <a href="#" class="text-red-500 px-3 py-2 text-sm font-medium">Masuk/Daftar</a>
+                </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile screen  
+            <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="menu" class="hidden bg-color-primary-dark h-[100vh] absolute inset-0">
+                <ul class="h-full grid place-items-center py-20">
+                    <li><a id="hLink" href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a id="hLink" href="#features" class="hover:text-color-secondary ease-in duration-200">Features</a></li>
+                    <li><a id="hLink" href="#testimonial" class="hover:text-color-secondary ease-in duration-200">Testimonial</a></li>
+                    <li><a id="hLink" href="#pricing" class="hover:text-color-secondary ease-in duration-200">Pricing</a></li>
+                    <li><a id="hLink" href="#blog" class="hover:text-color-secondary ease-in duration-200">Blog</a></li>
+                    <li><a id="hLink" href="#contact" class="hover:text-color-secondary ease-in duration-200">Contact</a></li>
+                    <li><button class="btn">free trial</button></li>
+                </ul>
+            </div> -->
+        </nav>
+    </header>
+            </nav>
+            <!--Navbar End-->
+
+        <div class="text-white mt-48 max-w-lg">
+            <h1 class=" text-5xl font semi-bold leading-normal">Selamat Datang di<br> INSHOKAI</h1>
+            <p class="text-yellow-400">_____</p>
+
+            <div class="mt-10">
+                <a href="#" class="bg-red-600 rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent
+                hover:border-red-600 hover:text-white duration-300 hover:border border border-transparent">Formulir Pendaftaran</a>
+            </div>
+        </div>
+
+        <img src="images/foto1.png" class="w-full xl:w-auto xl:absolute bottom-5 right-20">
+        <!--Beranda End-->
+
+    <!--tentang start-->
+
+    <main>
+    <div class="grid-flow-col flex justify-between">
+      <img src="images/tentang.png" class="w-full xl: w auto">
+      <h1 class="text-white">Tentang Institut Shotokan Indonesia<br>
+         Aut, modi laboriosam.
+         Nobis harum porro architecto eum provident! Maxime possimus,
+         nobis voluptatibus repellendus maiores magni reprehenderit 
+         sapiente modi obcaecati <span class="text-red-600"><a href="#">selengkapnya...</a></span> </h1>
+  </div>
+</div>
+</main>
+
+<!--tentang END-->
+
+<!--PENCAB-->
+  <main>
+    <section id="pencab" class="bg-black">
+      <div class="text-white text-center m-auto">
+      <h1 class="text-4xl font semi-bold leading-normal">PENCAB</h1>
+      <h2 class="text-yellow-400">______</h2>
+      </div>
+      <!--Card Pencab-->
+      <div class="flex min-h-screen items-center justify-center bg-black">
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            <div class="h-96 w-72">
+              <img class="h-full w-full" src="images/pencab.jpeg" alt="" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold text-white">Hanako Zayuki</h1>
+              
+            </div>
+          </div>
+          <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            <div class="h-96 w-72">
+              <img class="h-full w-full object-cover" src="images/pencab.jpeg" alt="" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold text-white">Kuro Asahi</h1>
+            </div>
+          </div>
+          
+          <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            <div class="h-96 w-72">
+              <img class="h-full w-full object-cover" src="images/pencab.jpeg" alt="" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold text-white">Arianto Bell</h1>
+            </div>
+          </section>
+  </main>
+<!--pencab end-->
+
+<!-- program start -->
+
+
+<main>
+
+  <section id="program" class="bg-black">
+    <div class="text-white text-center m-auto ">
+    <h1 class="text-4xl font semi-bold leading-normal">PROGRAM</h1>
+    <h2 class="text-yellow-400">______</h2>
+    </div>
+  
+  <div class="bg-black w-full min-h-screen gap-10 flex-wrap flex justify-center items-center">
+    <!-- Card -->
+    <div class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+      <!-- Image -->
+      <img class="h-40 object-cover rounded-xl h-40 object-cover rounded-xl" src="images/Martial Arts.jpeg" alt="">
+      <div class="p-2">
+      <!-- Heading -->
+      <h2 class="font-bold text-lg mb-2 ">Nama Program</h2>
+      <!-- Description -->
+      <p class="text-sm text-gray-600">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>      
+    </div>
+
+      <!-- Card -->
+    <div class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+      <!-- Image -->
+      <img class="h-40 object-cover rounded-xl h-40 object-cover rounded-xl" src="images/World Taekwondo Ranking Male Olympic Kyorugi February 2024.jpeg" alt="">
+      <div class="p-2">
+      <!-- Heading -->
+      <h2 class="font-bold text-lg mb-2 ">Nama Program</h2>
+      <!-- Description -->
+      <p class="text-sm text-gray-600">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+    </div>
+    
+      <!-- Card -->
+    <div class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+      <!-- Image -->
+      <img class="h-40 object-cover rounded-xl h-40 object-cover rounded-xl" src="images/Let’s Find Out How to Pick a Shin Guard for Your MMA Classes.jpeg" alt="">
+      <div class="p-2">
+      <!-- Heading -->
+      <h2 class="font-bold text-lg mb-2 ">Nama Program</h2>
+      <!-- Description -->
+      <p class="text-sm text-gray-600">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- Program End -->
+
+<!-- Berita Start -->
+<main>
+<section id="program" class="bg-black">
+  <div class="text-white text-center m-auto ">
+  <h1 class="text-4xl font semi-bold leading-normal">BERITA</h1>
+  <h2 class="text-yellow-400">______</h2>
+  </div>
+
+<div class="bg-black w-full min-h-screen gap-10 flex-wrap flex justify-center items-center">
+  <!-- Card -->
+  <div class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+    <!-- Image -->
+    <img class="h-40 object-cover rounded-xl h-40 object-cover bg-center" src="images/berita 1.jpeg" alt="">
+    <div class="p-2">
+    <!-- Heading -->
+    <h2 class="font-bold text-lg mb-2 ">Berita 1</h2>
+    <!-- Description -->
+    <p class="text-sm text-gray-600">Jakarta - 
+      Panglima Kostrad Letjen TNI Muhammad Saleh Mustafa menggelar kejuaraan taekwondo Pangkostrad Cup 2024. Pangkostrad menyebut
+      </p>
+    </div>
+    <button class="bg-red-700 py-2.5 px-8 rounded-full"><a href="https://news.detik.com/berita/d-7332440/pangkostrad-gelar-taekwondo-cup-ingatkan-tentara-soal-kemampuan-bela-diri"> Selengkapnya</a></button>
+    </div>      
+  
+
+    <!-- Card -->
+  <div class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+    <!-- Image -->
+    <img class="h-40 object-cover rounded-xl h-40 object-cover rounded-xl" src="images/berita 2.jpeg" alt="">
+    <div class="p-2">
+    <!-- Heading -->
+    <h2 class="font-bold text-lg mb-2 ">Berita 2</h2>
+    <!-- Description -->
+    <p class="text-sm text-gray-600">Jakarta - Unit Kegiatan Mahasiswa (UKM) Taekwondo Universitas Tribhuwana Tunggadewi (Unitri) 
+      menorehkan prestasi di Kejuaraan..
+    </p>
+    </div>
+    <button class="bg-red-700 py-2.5 px-8 rounded-full"><a href="https://sport.detik.com/sport-lain/d-7241357/mahasiswa-unitri-raih-5-medali-di-kejuaraan-taekwondo-tingkat-nasional">Selengkapnya</a></button>
+    </div>
+  
+  
+    <!-- Card -->
+  <div class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+    <!-- Image -->
+    <img class="h-40 object-cover rounded-xl h-40 object-cover rounded-xl" src="images/berita 3.jpeg" alt="">
+    <div class="p-2">
+    <!-- Heading -->
+    <h2 class="font-bold text-lg mb-2 ">Berita 3</h2>
+    <!-- Description -->
+    <p class="text-sm text-gray-600">Jakarta - Rapat Kerja Nasional (Rakernas) Pengurus Besar Taekwondo telah usai. Berikut beberapa hasil dari agenda tersebut.
+      Rakernas PBTI ditutup
+      </p>
+      </div>
+    <button class="bg-red-700 py-2.5 px-8 rounded-full"><a href="https://sport.detik.com/sport-lain/d-7222315/ini-hasil-rakernas-taekwondo-indonesia"> Selengkapnya</a></button>
+    </div>
+  </div>
+</div>
+</main>
+  
+<!-- Produk -->
+
+  <!-- Berita Start -->
+<main>
+ <body>
+
+    <div class="text-white text-center m-10 ">
+    <h1 class="text-4xl font semi-bold leading-normal">PRODUK</h1>
+    <h2 class="text-yellow-400">______</h2>
+    </div>
+  
+  <div class="bg-black w-full gap-10 flex-wrap flex justify-center items-center">
+    <!-- Card -->
+    <div class="w-60 p-2 bg-yellow-400 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+      <!-- Image -->
+      <img class="h-40 object-cover rounded-xl h-40 object-cover bg-center" src="images/berita 1.jpeg" alt="">
+      <div class="p-2">
+      <!-- Heading -->
+      <h2 class="font-bold text-lg mb-2 ">Satu set baju latihan</h2>
+      <!-- Description -->
+      <p class="text-sm text-gray-600">Deskripsi baju beserta harga nya
+        </p>
+      </div>
+      <button class="bg-black py-2.5 px-8 rounded-full"><a href="#" class="text-yellow-400">Beli Sekarang</a></button>
+      </div>      
+      
+
+        <!-- Card -->
+        <div class="w-60 p-2 bg-yellow-400 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+          <!-- Image -->
+          <img class="h-40 object-cover rounded-xl h-40 object-cover bg-center" src="images/berita 1.jpeg" alt="">
+          <div class="p-2">
+          <!-- Heading -->
+          <h2 class="font-bold text-lg mb-2 ">Satu set baju latihan</h2>
+          <!-- Description -->
+          <p class="text-sm text-gray-600">Deskripsi baju beserta harga nya
+            </p>
+          </div>
+          <button class="bg-black py-2.5 px-8 rounded-full"><a href="#" class="text-yellow-400">Beli Sekarang</a></button>
+          </div>      
+
+        
+            <!-- Card -->
+            <div class="w-60 p-2 bg-yellow-400 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+              <!-- Image -->
+              <img class="h-40 object-cover rounded-xl h-40 object-cover bg-center" src="images/berita 1.jpeg" alt="">
+              <div class="p-2">
+              <!-- Heading -->
+              <h2 class="font-bold text-lg mb-2 ">Satu set baju latihan</h2>
+              <!-- Description -->
+              <p class="text-sm text-gray-600">Deskripsi baju beserta harga nya
+                </p>
+              </div>
+              <button class="bg-black py-2.5 px-8 rounded-full"><a href="#" class="text-yellow-400">Beli Sekarang</a></button>
+              </div>      
+
+              <!-- Card -->
+        <div class="w-60 p-2 bg-yellow-400 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+          <!-- Image -->
+          <img class="h-40 object-cover rounded-xl h-40 object-cover bg-center" src="images/berita 1.jpeg" alt="">
+          <div class="p-2">
+          <!-- Heading -->
+          <h2 class="font-bold text-lg mb-2 ">Satu set baju latihan</h2>
+          <!-- Description -->
+          <p class="text-sm text-gray-600">Deskripsi baju beserta harga nya
+            </p>
+          </div>
+          <button class="bg-black py-2.5 px-8 rounded-full"><a href="#" class="text-yellow-400">Beli Sekarang</a></button>
+          </div>      
+          
+          <!-- Card -->
+        <div class="w-60 p-2 bg-yellow-400 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+          <!-- Image -->
+          <img class="h-40 object-cover rounded-xl h-40 object-cover bg-center" src="images/berita 1.jpeg" alt="">
+          <div class="p-2">
+          <!-- Heading -->
+          <h2 class="font-bold text-lg mb-2 ">Satu set baju latihan</h2>
+          <!-- Description -->
+          <p class="text-sm text-gray-600">Deskripsi baju beserta harga nya
+            </p>
+          </div>
+          <button class="bg-black py-2.5 px-8 rounded-full"><a href="#" class="text-yellow-400">Beli Sekarang</a></button>
+          </div>      
+            </main>
+    </body>
+  <!--  END -->
+
+  <!-- Footer -->
+
+  <body>
+<main>
+    <div class="text-white text-center m-10 ">
+    <h1 class="text-4xl font semi-bold leading-normal">Kontak</h1>
+    <h2 class="text-yellow-400">______</h2>
+    </div>
+
+  <div class="p-18 bg-black text-gray-200">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+        <div class="mb-5">
+          <h4 class="text-2xl pb-4">INSHOKAI</h4>
+          <p class="text-gray-500">
+          Alamat perguruan<br>
+          Medan, Sumatera Utara<br>
+          Kode Pos, 20351<br>
+          Indonesia <br><br>
+          <strong>Telepon:</strong>+62 6542 7786 9856 <br>
+          <strong>Email:</strong>inshokai@gmail.com<br>
+        </p>
+        </div>
+        <div class="mb-5">
+          <h4>Kirim Feedback</h4>
+          <form>
+            <input type="text" name="" id="">
+            <button >Kirim</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> 
+</footer>
+</main>
+</html>
+</body>

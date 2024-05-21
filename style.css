@@ -1,0 +1,16 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.koulen-regular {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.text-white{
+    margin: 15rem;
+}
+
+.min-h-screen{
+    min-height: 50vh;
+}
+
